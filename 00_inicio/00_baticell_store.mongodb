@@ -12,4 +12,7 @@ db.producto.insertOne(
 )
 
 // Lista el documento
-db.producto.find();
+db.producto.find()
+
+// Cuenta los documentos de la colección producto
+db.producto.find().count()

@@ -2,7 +2,7 @@
 use("ClothingStore")
 
 // Crear colección prendas con los siguientes documentos
-db.prenda.insertOne(
+/* db.prenda.insertOne(
     {
       nombre: "Camisa Formal",
       marca: "H&M",
@@ -12,7 +12,7 @@ db.prenda.insertOne(
         "Hombres"
     ]
     }
-)
+) */
 
 // Listar documentos
 db.prenda.find()

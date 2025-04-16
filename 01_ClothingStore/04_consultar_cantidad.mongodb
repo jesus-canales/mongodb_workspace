@@ -1,0 +1,7 @@
+use ("dbClothingStore")
+
+db.prenda.find(
+    { 
+        Stock: { $gte: 50 }  // mayor igual que
+    }
+);

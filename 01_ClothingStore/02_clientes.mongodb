@@ -1,0 +1,25 @@
+// Creamos la base de datos ClothingStore
+use("ClothingStore")
+
+// Insertar varios documentos en colección clientes
+db.clientes.insertMany([
+    {
+        _id: "C001",
+        nombre: "Juan",
+        apellido: "Pérez",
+        fecha_nacimiento: "15/05/1990",
+        correo_electronico: "juan.perez@gmail.com",
+        categorias: ['Ropa Formal', "Camisas", "Hombres"]
+    },
+    {
+        _id: "C002",
+        nombre: "Ana",
+        apellido: "Gómez",
+        fecha_nacimiento: "",
+        correo_electronico: "ana.gomez@outlook.com",
+        categorias: ['Ropa Casual', 'Vestidos', 'Mujeres', 'Accesorios' ]
+    }
+])
+
+// Listar documentos insertados
+db.clientes.find()

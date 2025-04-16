@@ -1,0 +1,5 @@
+// Creamos la base de datos ClothingStore
+use("ClothingStore")
+
+// Listar las 3 primeras prendas
+db.prenda.find().limit(3);

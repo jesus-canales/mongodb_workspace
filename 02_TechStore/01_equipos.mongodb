@@ -1,0 +1,20 @@
+// Crear base de datos dbTechStore
+use ("dbTechStore")
+
+// Crear colección y documento
+db.equipos.insertOne(
+    {
+        nombre: "Laptop Asus",
+        categoria: "Portátiles",
+        precio: 2500,
+        stock: 30,
+        accesorios: [
+            'cargador',
+            'Funda de protección',
+            'Ratón inalámbrico'
+        ]
+    }
+)
+
+// Lista los documentos agregados
+db.equipos.find()

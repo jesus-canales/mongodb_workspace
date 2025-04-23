@@ -2,17 +2,50 @@
 use("ClothingStore")
 
 // Crear colección prendas con los siguientes documentos
-/* db.prenda.insertOne(
-    {
-      nombre: "Camisa Formal",
-      marca: "H&M",
-      categorias: [
-        "Ropa Formal", 
-        "Camisas",
-        "Hombres"
-    ]
-    }
-) */
+db.prendas.insertOne(
+  {
+    nombre:"Camisa Formal",
+    marca: "H&M",
+    categorias: [
+      "Ropa Formal", 
+      "Camisas",
+      "Hombres"],
+    Stock: 50,
+    precio_unitario: 35.50
+   }
+)
+
+db.prendas.insertOne({
+  Nombre: "Pantalones Jeans",
+  Marca: "Levi's",
+  Categorías: ["Ropa Casual", "Pantalones", "Unisex"],
+  Stock: 100,
+  precio_unitario: 45.00
+})
+
+db.prendas.insertOne({
+  Nombre: "Vestido de Verano",
+  Marca: "Zara",
+  Categorías: ["Ropa Casual", "Vestidos", "Mujeres"],
+  Stock: 30,
+  precio_unitario: 29.99
+})
+
+db.prendas.insertOne({
+  Nombre: "Chompa de Lana",
+  Marca: "Uniqlo",
+  Categorías: ["Ropa de Invierno", "Chompas", "Unisex", "Mujeres"],
+  Stock: 75,
+  precio_unitario: 89.99
+})
+
+db.prendas.insertOne({
+  Nombre: "Casaca de Cuero",
+  Marca: "Gucci",
+  Categorías: ["Ropa de Invierno", "Unisex"],
+  Stock: 20,
+  precio_unitario: 299.99
+})
 
 // Listar documentos
-db.prenda.find()
+db.prendas.find()
